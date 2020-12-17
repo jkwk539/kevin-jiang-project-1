@@ -1,4 +1,21 @@
 
+.text {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+}
+
+.text:hover {
+  background-color: #555;
+  color: white;
+
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

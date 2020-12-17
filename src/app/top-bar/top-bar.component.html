@@ -17,7 +17,7 @@
   <div class="medium-6 large-3 cell">
     <button type="button"
 
-      class="button fancy-button"
+      class="text"
 
       [attr.aria-expanded]="!isOffcanvas"
       aria-controls="offCanvasMenuRight"
@@ -70,12 +70,12 @@
   id="offCanvasMenuRight"
   aria-hidden="true"
   #offcanvasRight="bs-offcanvas">
-  <h4>QCC</h4>
+  <h4>Info</h4>
   <ul class="menu vertical">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
       
       <a routerLink="/" class="button fancy-button">
-        <i class="material-icons">store</i>My Store
+        <i class="material-icons">store</i>About Me
       </a>
 
     </li>
