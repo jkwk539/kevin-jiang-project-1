@@ -1,13 +1,5 @@
 /* Global Styles */
 
-* {
-  font-family: 'Roboto', Arial, sans-serif;
-  color: #616161;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   margin: 0;
 }
@@ -77,7 +69,7 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #737f8b;
+  background-color: #227dd8;
   color: white;
   border: none;
 }
@@ -92,21 +84,6 @@ label {
   cursor: auto;
 }
 
-/* Fancy Button */
-
-.fancy-button {
-  background-color: white;
-  color: #084d97;
-}
-
-.fancy-button i.material-icons {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
 
 /* Top Bar */
 
@@ -122,7 +99,7 @@ app-top-bar {
 }
 
 app-top-bar h1 {
-  color: white;
+  color: firebrick;
   margin: 0;
 }
 

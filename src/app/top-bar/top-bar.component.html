@@ -1,10 +1,10 @@
 <a [routerLink]="['/']">
-  <h1>My Store</h1>
+	<h1>My Store</h1>
 </a>
 
 <div class="grid-x grid-margin-x">
 
-  <!-- <div class="medium-6 large-3 cell">
+	<!-- <div class="medium-6 large-3 cell">
     <button type="button"
       class="button primary"
       [attr.aria-expanded]="!isOffcanvas"
@@ -13,20 +13,22 @@
       Toggle Off Canvas Left
     </button>
   </div> -->
-  
-  <div class="medium-6 large-3 cell">
-    <button type="button"
 
-      class="text"
+	<div>
+		<button type="button"
+
+      class="menu"
 
       [attr.aria-expanded]="!isOffcanvas"
       aria-controls="offCanvasMenuRight"
       (click)="offcanvasRight.show()">
-      Menu
+      <span class="material-icons" id="size">
+        menu
+      </span>
     </button>
-  </div>
+	</div>
 
-  <!-- <div class="medium-6 large-3 cell">
+	<!-- <div class="medium-6 large-3 cell">
     <button type="button"
       class="button primary"
       [attr.aria-expanded]="!isOffcanvas"
@@ -44,7 +46,7 @@
       Toggle Off Canvas Bottom
     </button>
   </div> -->
-  </div><!-- /grid -->
+</div><!-- /grid -->
 
 <!-- Position Left 
 <div [offcanvas]="isOffcanvas"
@@ -65,51 +67,59 @@
 </div> -->
 
 <!-- Position Right -->
-<div [offcanvas]="isOffcanvas"
-  class="off-canvas position-right"
-  id="offCanvasMenuRight"
-  aria-hidden="true"
-  #offcanvasRight="bs-offcanvas">
-  <h4>Info</h4>
-  <ul class="menu vertical">
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
-      <a routerLink="/" class="button fancy-button">
-        <i class="material-icons">store</i>About Me
-      </a>
+<div [offcanvas]="isOffcanvas" class="off-canvas position-right" id="offCanvasMenuRight" aria-hidden="true"
+	#offcanvasRight="bs-offcanvas">
+	<div class="overlay">
 
-    </li>
-
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
-      <a routerLink="/cart" class="button fancy-button">
-        <i class="material-icons">shopping_cart</i>Checkout
-      </a>
-      
-    </li>
-
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
-      <a routerLink="/shipping" class="button fancy-button">
-        <i class="material-icons">local_shipping</i>Shipping
-      </a>
-      
-    </li>
-
-    <li routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-      
-      <a routerLink="/graphic" class="button fancy-button">
-        <i class="material-icons">description</i>Graphic Design
-      </a>
-      
-    </li>
-
-
-
-  </ul>
-  <button class="close-button" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
+		<button class="closebtn" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
     <span aria-hidden="true">×</span>
-  </button>
+    </button>
+
+		<div class="overlay-content">
+
+			<h4>Info</h4>
+
+			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+				<a routerLink="/">
+					<i class="material-icons" id="icon">store</i>
+					<h4> About Me </h4>
+				</a>
+
+			</h1>
+
+			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+				<a routerLink="/cart">
+					<i class="material-icons" id="icon">shopping_cart</i>
+					<h4>Checkout</h4>
+				</a>
+
+			</h1>
+
+			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+				<a routerLink="/shipping">
+					<i class="material-icons" id="icon">local_shipping</i>
+					<h4>Shipping</h4>
+				</a>
+
+			</h1>
+
+			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+				<a routerLink="/graphic">
+					<i class="material-icons" id="icon">description</i>
+					<h4>Graphic Design</h4>
+				</a>
+
+			</h1>
+
+
+
+		</div>
+	</div>
+
 </div>
 
 <!-- Position Top 
