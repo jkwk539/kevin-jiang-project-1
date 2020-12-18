@@ -20,37 +20,32 @@
   font-size: 50px;
 }
 
-.overlay {
-  position: fixed;
+
+.overlay-content {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  
+  color: #230b91;
   z-index: 1;
-  top: 0;
-  left: 0;
   background: rgba(146, 9, 173, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
-.overlay-content {
-  position: relative;
-  top: 60%;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  color: #230b91;
-}
-
-.overlay a {
-  padding: 51px;
+.overlay-content a {
+  
   width: auto;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 20px;
   color: #230b91;
   display: block;
   transition: 0.3s;
 }
 
-.overlay a:hover,
-.overlay a:focus {
+.overlay-content a:hover,
+.overlay-content a:focus {
   color: #f1f1f1;
 }
 

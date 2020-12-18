@@ -69,56 +69,55 @@
 <!-- Position Right -->
 <div [offcanvas]="isOffcanvas" class="off-canvas position-right" id="offCanvasMenuRight" aria-hidden="true"
 	#offcanvasRight="bs-offcanvas">
-	<div class="overlay">
 
-		<button class="closebtn" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
+
+
+	<div class="overlay-content">
+
+	
+
+		<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+			<a routerLink="/">
+				<i class="material-icons" id="icon">home</i>
+				<h4> Home </h4>
+			</a>
+
+		</h1>
+
+		<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+			<a routerLink="/cart">
+				<i class="material-icons" id="icon">work</i>
+				<h4>Projects</h4>
+			</a>
+
+		</h1>
+
+		<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+			<a routerLink="/shipping">
+				<i class="material-icons" id="icon">person</i>
+				<h4>About Me</h4>
+			</a>
+
+		</h1>
+
+		<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+
+			<a routerLink="/graphic">
+				<i class="material-icons" id="icon">call</i>
+				<h4>Contact Me</h4>
+			</a>
+
+		</h1>
+	<button class="closebtn" aria-label="Close Menu" aria-controls="offCanvasMenu" type="button" (click)="offcanvasRight.hide()">
     <span aria-hidden="true">×</span>
-    </button>
-
-		<div class="overlay-content">
-
-			<h4>Info</h4>
-
-			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-
-				<a routerLink="/">
-					<i class="material-icons" id="icon">store</i>
-					<h4> About Me </h4>
-				</a>
-
-			</h1>
-
-			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-
-				<a routerLink="/cart">
-					<i class="material-icons" id="icon">shopping_cart</i>
-					<h4>Checkout</h4>
-				</a>
-
-			</h1>
-
-			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-
-				<a routerLink="/shipping">
-					<i class="material-icons" id="icon">local_shipping</i>
-					<h4>Shipping</h4>
-				</a>
-
-			</h1>
-
-			<h1 routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-
-				<a routerLink="/graphic">
-					<i class="material-icons" id="icon">description</i>
-					<h4>Graphic Design</h4>
-				</a>
-
-			</h1>
-
-
-
-		</div>
+  </button>
 	</div>
+
+
+
 
 </div>
 
