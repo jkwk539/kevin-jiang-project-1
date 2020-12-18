@@ -1,5 +1,5 @@
 <div class="list">
-	<h2>Products</h2>
+	<h2>Home</h2>
 
 	<div *ngFor="let product of products; index as productId">
 
@@ -9,12 +9,27 @@
 			</a>
 		</h3>
 
-		<p *ngIf="product.description">
-			Description: {{ product.description }}
-		</p>
+		<button (click)="share()">
+      <a routerLink="/graphic">
+				<i class="material-icons" id="icon">work</i>
+				<h5>Projects</h5>
+			</a>
+  </button>
+
+  <button (click)="share()">
+      <a routerLink="/shipping">
+				<i class="material-icons" id="icon">person</i>
+				<h5>About Me</h5>
+			</a>
+  </button>
+
+
 
 		<button (click)="share()">
-    Share
+      <a routerLink="/cart">
+				<i class="material-icons" id="icon">call</i>
+				<h5>Contact Me</h5>
+			</a>
   </button>
 
 		<app-product-alerts [product]="product" (notify)="onNotify()">

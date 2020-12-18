@@ -1,7 +1,6 @@
-
 .simple-article-header {
   background: #fefefe;
-  padding: 1.3rem 2rem .7rem;
+  padding: 1.3rem 2rem 0.7rem;
   border: 1px solid #cacaca;
   margin-bottom: 1rem;
 }
@@ -18,7 +17,8 @@
   color: #0a0a0a;
 }
 
-.simple-article-header .article-title a:hover, .simple-article-header .article-title a:focus {
+.simple-article-header .article-title a:hover,
+.simple-article-header .article-title a:focus {
   color: #1779ba;
 }
 
@@ -26,7 +26,8 @@
   color: #8a8a8a;
 }
 
-.simple-article-header .article-author-comments a.article-comments:hover, .simple-article-header .article-author-comments a.article-comments:focus {
+.simple-article-header .article-author-comments a.article-comments:hover,
+.simple-article-header .article-author-comments a.article-comments:focus {
   color: #1779ba;
 }
 
@@ -52,7 +53,8 @@
   color: #fefefe;
 }
 
-.simple-article-header .article-social .social.facebook:hover, .simple-article-header .article-social .social.facebook:focus {
+.simple-article-header .article-social .social.facebook:hover,
+.simple-article-header .article-social .social.facebook:focus {
   background-color: #2f477a;
   color: #fefefe;
 }
@@ -62,7 +64,8 @@
   color: #fefefe;
 }
 
-.simple-article-header .article-social .social.twitter:hover, .simple-article-header .article-social .social.twitter:focus {
+.simple-article-header .article-social .social.twitter:hover,
+.simple-article-header .article-social .social.twitter:focus {
   background-color: #1a8fe8;
   color: #fefefe;
 }
@@ -72,7 +75,8 @@
   color: #fefefe;
 }
 
-.simple-article-header .article-social .social.linkedin:hover, .simple-article-header .article-social .social.linkedin:focus {
+.simple-article-header .article-social .social.linkedin:hover,
+.simple-article-header .article-social .social.linkedin:focus {
   background-color: #006291;
   color: #fefefe;
 }
@@ -82,7 +86,8 @@
   color: #fefefe;
 }
 
-.simple-article-header .article-social .social.google-plus:hover, .simple-article-header .article-social .social.google-plus:focus {
+.simple-article-header .article-social .social.google-plus:hover,
+.simple-article-header .article-social .social.google-plus:focus {
   background-color: #be3221;
   color: #fefefe;
 }
@@ -95,3 +100,14 @@
   margin-right: 0.25rem;
 }
 
+.thumbnail {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.imgs {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}

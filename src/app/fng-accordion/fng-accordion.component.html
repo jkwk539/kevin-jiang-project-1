@@ -1,12 +1,29 @@
 <accordion>
-  <accordion-group heading="Content 1">
-    <p>accordion 1</p>
+  <accordion-group heading="Education"
+  [isOpen]="isFirstOpen">
+    <ul class='aboutMe'>
+    <li>QCC</li>
+    <li>QC</li>
+    <li>RFK HighSchool</li>
+    </ul>
+
   </accordion-group>
-  <accordion-group heading="Initially expanded"
-                   [isOpen]="isFirstOpen">
-    This content is straight in the template.
+  <accordion-group heading="Skills">
+    <ul class='aboutMe'>
+      <li>Visual Basic</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>JQuery</li>
+      <li>C++</li>
+      <li>AngularJS</li>
+    </ul>
   </accordion-group>
-  <accordion-group heading="Content 2">
-    <p>accordion 3</p>
+  <accordion-group heading="Hobbies">
+    <ul class='aboutMe'>
+      <li>Hiking</li>
+      <li>Snowboarding</li>
+      <li>PC/Mobile Games</li>
+    </ul>
   </accordion-group>
 </accordion>
